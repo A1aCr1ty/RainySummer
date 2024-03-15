@@ -1,7 +1,6 @@
 use std::error::Error;
 
-use crate::data::{Secret};
-
+use crate::data::Secret;
 
 pub fn parse_arguments(args: &[String], secret: &mut Secret) -> Result<(), Box<dyn Error>> {
     let mut index: usize = 1;
