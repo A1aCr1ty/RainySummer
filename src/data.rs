@@ -1,4 +1,9 @@
+use std::io::Stdout;
+
 use serde::{Deserialize, Serialize};
+use tui::backend::CrosstermBackend;
+
+pub type CrossTerminal = tui::Terminal<CrosstermBackend<Stdout>>;
 
 #[allow(dead_code)]
 #[derive(Debug, Serialize, Deserialize)]
